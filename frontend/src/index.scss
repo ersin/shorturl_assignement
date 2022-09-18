@@ -1,0 +1,138 @@
+
+body,html,*, textarea, input, select {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box; 
+}
+ 
+
+#root, .app{
+  width: 100%;
+}
+
+a{
+  text-decoration: underline;
+  color: inherit;
+  cursor: pointer;
+} 
+
+a:hover{ 
+  color: #24BBEA;
+}
+
+.button{
+  font-weight: bold;
+  font-size: 12pt;
+  background-color: #24BBEA;
+  color:#000;
+  padding: 10px 20px;
+  height: 44px;
+  line-height: 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  transition: 200ms;
+}
+
+.button:hover{
+  background-color: #00CFE4;
+  color:#000;
+  border-color: #00CFE4;
+  user-select: none; 
+}
+.button:active{
+  background-color: #00E1CE;
+  color:#000;
+  border-color: #00E1CE;
+}
+
+.button--sub{
+  background-color: #A04E9B;
+  color:#fff;
+  border-color: #A04E9B;
+}
+.button--sub:hover{
+  background-color: #8A6EC1;
+  color:#fff;
+  border-color: #8A6EC1;
+}
+.button--sub:active{
+  background-color: #A72D6D;
+  color:#fff;
+  border-color: #A72D6D;
+}
+
+textarea, input, select { 
+  padding: 10px; 
+  resize: none;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  line-height: 1.4;
+  background-color: #fafafa; 
+  border-color: #24BBEA;
+} 
+
+textarea:hover, input:hover, select:hover {  
+  background-color: #fff; 
+  border-color: #00CFE4;
+} 
+
+.tabs{
+  .tab-headers{
+
+        display: flex;
+        border-bottom: 1px solid #ddd;
+
+        .tab-header:last-child{
+          border-right: 0px none;
+        }
+        .tab-header{
+          background-color: #fff;
+          border-radius: 4px 4px 0px 0px;
+          padding: 16px 25px;
+          cursor: pointer;
+          border-right: 1px solid #eee;
+          user-select: none;
+          margin-right:   10px;
+        }
+        .tab-header:hover{
+          background-color: #fafafa;
+          color: #000;
+        }
+        .tab-header:active{
+          background-color: #eee;
+        }
+        .tab-header.selected{
+          background-color: #24BBEA;
+          cursor: default;
+        }
+        .tab-header.selected:hover{
+          background-color: #00CFE4;
+        }
+    }
+  
+  .tab-contents{ 
+        .tab-content{ 
+          display: none;
+        }  
+        .tab-content.selected{
+          display: block;
+          padding-top: 20px;
+        } 
+    }
+
+}
+
+
+
+.warning-text{ 
+  color: #A72D6D;
+  padding: 10px;
+  font-size: 10pt;
+}
